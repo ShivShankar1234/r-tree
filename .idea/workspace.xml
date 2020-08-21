@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="600d41cb-2fc0-40f9-a28e-1c2ec3b585f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/r-tree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/r-tree.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/geometry/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/geometry/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/geometry/internal/RectangleDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/geometry/internal/RectangleDouble.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +15,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>

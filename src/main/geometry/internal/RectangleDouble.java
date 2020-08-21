@@ -2,7 +2,10 @@ package geometry.internal;
 
 import geometry.Geometry;
 import geometry.Rectangle;
+
 import guavaUtils.Preconditions;
+import guavaUtils.Objects;
+import internal.ObjectsHelper;
 
 public class RectangleDouble implements Rectangle {
     private final double x1, x2, y1, y2;
@@ -100,9 +103,29 @@ public class RectangleDouble implements Rectangle {
         return true;
     }
 
-
     @Override
     public Geometry geometry() {
         return this;
+    }
+
+    @Override
+    public String toString(){
+        return "Rectangle [x1=" + x1 +", y1=" + ", x2=" + x2 + ", y2=" + y2 + "]";
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hashCode(x1, y1, x2, y2);
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        RectangleDouble other = ObjectsHelper.asClass(obj, RectangleDouble.class);
+        if(other != null){
+            return Objects.equal(x1, other.x1) && Objects.equal(x2, other.x2)
+                    && Objects.equal(y1, other.y1) && Objects.equal(y2, other.y2);
+        } else{
+            return false;
+        }
     }
 }
