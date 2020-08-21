@@ -24,5 +24,5 @@ public interface Rectangle extends Geometry, HasGeometry {
     boolean contains(double x, double y);
 
     boolean isDoublePrecision();
-    
+
 }
