@@ -95,6 +95,59 @@ public class Line2D {
 
     /**
      * Tests if line segment form (x1, y1) to (x2, y2) intersects the segment from (x3, y3) to (x4, y4)
+     *
+     * https://www.geeksforgeeks.org/check-if-two-given-line-segments-intersect/
+     *
+     * Let lines be given by a pair of endpoints: line 1 = (p1, q1), line 2 = (p2, q2)
+     * Case 1: Lines intersect and are not collinear if the paths formed by:
+     *          (p1, q1, p2) and (p1, q1, q2) have different orientations AND
+     *          (p2, q2, p1) and (p2, q2, q1) have different orientations
+     *
+     * Case 2: (p1, q1, p2), (p1, q1, q2), (p2, q2, p1), and (p2, q2, q1) are all collinear and
+     *          The x projection of (p1, q1) and (p2, q2) intersect
+     *          The y projection of (p1, q1) and (p2, q2) intersect
      */
-    
+
+    private static boolean linesIntersect(double x1, double y1, double x2, double y2,
+                                          double x3, double y3, double x4, double y4){
+        //Orientations of the 4 special cases
+        int o1 = orientation(x1, y1, x2, y2, x3, y3);
+        int o2 = orientation(x1, y1, x2, y2, x4, y4);
+        int o3 = orientation(x3, y3, x4, y4, x1, y1);
+        int o4 = orientation(x3, y3, x4, y4, x1, y1);
+
+        if(o1 != o2 && o3 != o4){
+            return true;        //Case 1
+        }
+
+        //Case 2
+        if(o1 == 0 && onSegment(x1, y1, x2, y2, x3, ))
+
+    }
+
+    /**
+     * Returns an int corresponding to orientation
+     * 0 ---> p, q, r are collinear
+     * 1 ---> Clockwise
+     * 2 ---> CounterClockwise
+     *
+     * https://www.geeksforgeeks.org/orientation-3-ordered-points/
+     */
+    static int orientation(double p1, double p2, double q1, double q2, double r1, double r2){
+        double val = (q2 - p2) * (r1 - q1) - (q1 - p1) * (r2 - q2);
+
+        if (val == 0){
+            return 0;       //collinear
+        }
+        return (val > 0) ? 1 : 2;
+    }
+
+    /**
+     * Given 3 collinear points p, q, and r, checks if point q lies on line segment 'pr'
+     */
+    static boolean onSegment(double p1, double p2, double q1, double q2, double r1, double r2){
+        return q1 <= Math.max(p1, r1) && q1 >= Math.min(p1, r1) &&
+                q2 <= Math.max(p2, r2) && q2 >= Math.min(p2, r2);
+    }
+
 }
