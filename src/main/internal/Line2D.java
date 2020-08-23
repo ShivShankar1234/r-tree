@@ -106,6 +106,12 @@ public class Line2D {
      * Case 2: (p1, q1, p2), (p1, q1, q2), (p2, q2, p1), and (p2, q2, q1) are all collinear and
      *          The x projection of (p1, q1) and (p2, q2) intersect
      *          The y projection of (p1, q1) and (p2, q2) intersect
+     *
+     * Note:
+     * p1 = (x1, y1)
+     * q1 = (x2, y2)
+     * p2 = (x3, y3)
+     * q2 = (x4, y4)
      */
 
     private static boolean linesIntersect(double x1, double y1, double x2, double y2,
@@ -121,8 +127,19 @@ public class Line2D {
         }
 
         //Case 2
-        if(o1 == 0 && onSegment(x1, y1, x2, y2, x3, ))
-
+        if(o1 == 0 && onSegment(x1, y1, x3, y3, x2, y2)){
+            return true;
+        }
+        if(o2 == 0 && onSegment(x1, y1, x4, y4, x2, y2)){
+            return true;
+        }
+        if(o3 == 0 && onSegment(x3, y3, x1, y1, x4, y4)){
+            return true;
+        }
+        if(o4 == 0 && onSegment(x3, y3, x2, y2, x4, y4)){
+            return true;
+        }
+        return false;
     }
 
     /**
