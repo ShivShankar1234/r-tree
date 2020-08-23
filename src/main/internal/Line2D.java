@@ -93,6 +93,11 @@ public class Line2D {
         return a * x + b * y;
     }
 
+    public boolean intersectsLine(Line2D line){
+        return linesIntersect(line.getX1(), line.getY1(), line.getX2(), line.getY2(),
+                getX1(), getY1(), getX2(), getY2());
+    }
+
     /**
      * Tests if line segment form (x1, y1) to (x2, y2) intersects the segment from (x3, y3) to (x4, y4)
      *

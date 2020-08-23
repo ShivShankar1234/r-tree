@@ -1,6 +1,9 @@
 package geometry.internal;
 
+import geometry.Circle;
 import geometry.Rectangle;
+
+import java.util.Vector;
 
 public final class GeometryUtils {
     private GeometryUtils(){
@@ -74,4 +77,6 @@ public final class GeometryUtils {
                                      double a1, double b1, double a2, double b2){
         return x1 <= a2 && a1 <= x2 && y1 <= b2 && b1 <= y2;
     }
+
+
 }
