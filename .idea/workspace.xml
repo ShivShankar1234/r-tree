@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="600d41cb-2fc0-40f9-a28e-1c2ec3b585f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/geometry/internal/LineDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/geometry/internal/LineDouble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/geometry/internal/PointDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/geometry/internal/PointDouble.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +55,10 @@
       <screen x="1920" y="23" width="2560" height="1417" />
     </state>
     <state x="2215" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.23.2560.1417/0.23.1920.1177@1920.23.2560.1417" timestamp="1597956715424" />
-    <state x="2372" y="433" key="#com.intellij.ide.util.MemberChooser" timestamp="1598229964317">
+    <state x="2372" y="433" key="#com.intellij.ide.util.MemberChooser" timestamp="1598234674006">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2372" y="433" key="#com.intellij.ide.util.MemberChooser/1920.0.2560.1440/0.0.1920.1200@1920.0.2560.1440" timestamp="1598229964317" />
+    <state x="2372" y="433" key="#com.intellij.ide.util.MemberChooser/1920.0.2560.1440/0.0.1920.1200@1920.0.2560.1440" timestamp="1598234674006" />
     <state x="2289" y="162" key="SettingsEditor" timestamp="1597956843603">
       <screen x="1920" y="23" width="2560" height="1417" />
     </state>

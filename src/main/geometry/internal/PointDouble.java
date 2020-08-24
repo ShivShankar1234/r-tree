@@ -1,5 +1,6 @@
 package geometry.internal;
 
+import geometry.Geometries;
 import geometry.Geometry;
 import geometry.Point;
 import geometry.Rectangle;
