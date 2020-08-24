@@ -1,7 +1,9 @@
 package geometry.internal;
 
 import geometry.*;
+import guavaUtils.Objects;
 import internal.Line2D;
+import internal.ObjectsHelper;
 
 public class LineDouble implements Line{
 
@@ -107,12 +109,28 @@ public class LineDouble implements Line{
 
     @Override
     public boolean intersects(Rectangle r) {
-        return RectangleUtil.rectangleIntersectsLine(r.x1(), r.y1(), r.x2() - r.x1()), r.y2() - r.y1(),
-                x1, y1, x2, y2);                //TODO
+        return RectangleUtil.rectangleIntersectsLine(r.x1(), r.y1(),
+                r.x2() - r.x1(), r.y2() - r.y1(), x1, y1, x2, y2);               
     }
 
     @Override
     public boolean isDoublePrecision() {
         return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(x1, y1, x2, y2);
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        LineDouble other = ObjectsHelper.asClass(obj, LineDouble.class);
+        if(other != null){
+            return Objects.equal(x1, other.x1) && Objects.equal(x2, other.x2)
+                    && Objects.equal(y1, other.y1) && Objects.equal(y2, other.y2);
+        } else {
+            return false;
+        }
     }
 }
