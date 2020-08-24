@@ -1,7 +1,7 @@
 package geometry;
 
 /**
- * A geometric region that represents an Entry.
+ * A geometric region that represents an rtree.Entry.
  * For custom implementations of this interface please
  *  implement the equals() and hashCode() methods appropriately.
  */
