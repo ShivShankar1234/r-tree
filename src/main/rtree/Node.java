@@ -2,6 +2,7 @@ package rtree;
 
 import geometry.Geometry;
 import geometry.HasGeometry;
+import internal.NodeAndEntries;
 
 import java.util.List;
 

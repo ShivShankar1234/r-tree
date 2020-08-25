@@ -4,6 +4,7 @@ import geometry.*;
 import guavaUtils.Objects;
 import internal.Line2D;
 import internal.ObjectsHelper;
+import internal.RectangleUtil;
 
 public final class LineFloat implements Line {
     private final double x1;

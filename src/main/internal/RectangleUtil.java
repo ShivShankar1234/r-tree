@@ -1,4 +1,4 @@
-package geometry.internal;
+package internal;
 
 import java.awt.geom.Line2D;
 
