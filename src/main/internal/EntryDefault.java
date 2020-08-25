@@ -2,14 +2,15 @@ package internal;
 
 import geometry.Geometry;
 import guavaUtils.Preconditions;
-import rtree.Entry
+import rtree.Entry;
+
 
 /**
  * An entry in an R-Tree which has a spatial representation
  * @param <T>
  * @param <S>
  */
-public final class EntryDefault<T, S extends Geometry> implements Entry<T, S>  {
+public final class EntryDefault<T, S extends Geometry> implements Entry<T, S> {
     private final T value;
     private final S geometry;
 

@@ -1,6 +1,7 @@
 package rtree;
 
 import geometry.Geometry;
+import internal.FactoryDefault;
 
 public final class Factories {
 

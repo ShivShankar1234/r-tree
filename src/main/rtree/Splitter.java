@@ -1,6 +1,7 @@
 package rtree;
 
 import geometry.HasGeometry;
+import geometry.ListPair;
 
 import java.util.List;
 
