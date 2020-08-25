@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="600d41cb-2fc0-40f9-a28e-1c2ec3b585f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/internal/LeafDefault.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/geometry/internal/LineDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/geometry/internal/LineDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/geometry/internal/LineFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/geometry/internal/LineFloat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/geometry/internal/RectangleUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/internal/RectangleUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/rtree/LeafDefault.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/rtree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/rtree/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
