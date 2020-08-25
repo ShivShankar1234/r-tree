@@ -2,7 +2,7 @@ package internal;
 
 import java.awt.geom.Line2D;
 
-public class RectangleUtil {
+public final class RectangleUtil {
     private RectangleUtil(){
         // prevent instantiation
     }

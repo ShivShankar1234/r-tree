@@ -1,6 +1,6 @@
 package internal;
 
-public class Line2D {
+public final class Line2D {
     private final double x1, y1, x2, y2;
 
     public Line2D(double x1, double y1, double x2, double y2){
