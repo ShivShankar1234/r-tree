@@ -13,6 +13,14 @@ public final class Comparators {
 
     }
 
+    /**
+     * Compares nodes by how much they overlap with other nodes
+     *
+     * @param r     The min bounding rectangle of the entry we want to insert
+     * @param list
+     * @param <T>
+     * @return
+     */
     public static <T extends HasGeometry> Comparator<HasGeometry> overlapAreaComparator(
             final Rectangle r, final List<T> list){
         return new Comparator<HasGeometry>() {
@@ -47,6 +55,14 @@ public final class Comparators {
         return g.geometry().minBoundingRectangle().add(r).area();
     }
 
+    /**
+     * Returns the total interesting area of a nodes min bounding rectangle and every other nodes
+     * min bounding rectangle
+     * @param r
+     * @param list
+     * @param g
+     * @return
+     */
     private static float overlapArea(Rectangle r, List<? extends HasGeometry> list, HasGeometry g) {
         Rectangle newRect = g.geometry().minBoundingRectangle().add(r);
         float m = 0;
