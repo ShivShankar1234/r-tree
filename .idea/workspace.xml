@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="600d41cb-2fc0-40f9-a28e-1c2ec3b585f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/guavaUtils/Lists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/guavaUtils/Lists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/rtree/SplitterQuadratic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/rtree/SplitterQuadratic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
