@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Implementation of quadratic splitting algorithm
+ * Implementation of quadratic splitting algorithm.
  */
 public final class SplitterQuadratic implements Splitter{
     @SuppressWarnings("unchecked")
