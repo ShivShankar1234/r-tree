@@ -1,6 +1,6 @@
 # r-tree
 
-An R-tree is a commonly used geospatial index.
+An R-tree is a commonly used geospatial index. I was inspired to implement on from this paper: http://postgis.org/support/rtree.pdf
 
 This was fun to make, has an elegant and concise algorithm, is thread-safe, fast, and reasonably memory efficient (uses structural sharing).
 
